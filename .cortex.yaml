@@ -1,0 +1,17 @@
+---
+info:
+  title: Github Manager
+
+  description: The GitHub Active Directory Connector allows managing GitHub organizations
+    with Active Directory.
+  x-cortex-git:
+    github:
+      alias: ksorg
+      repository: khulnasoft-lab/github-manager
+  x-cortex-tag: github-connector
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: pd-services
+openapi: 3.0.1
+servers:
+- url: "/"
