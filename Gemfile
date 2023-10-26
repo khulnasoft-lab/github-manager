@@ -4,7 +4,7 @@ gem 'rails', '~> 4.2.11.1'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.0'
 gem 'compass-rails'
 gem 'daemons'
 gem 'delayed_job_active_record'
