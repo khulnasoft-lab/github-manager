@@ -1,0 +1,10 @@
+source "https://supermarket.getchef.com"
+
+# Can switch to upstream once these land:
+# https://github.com/fnichol/chef-rvm/pull/186
+# https://github.com/fnichol/chef-rvm/pull/212
+# https://github.com/fnichol/chef-rvm/pull/247
+cookbook 'rvm', '>= 0.9.0', git: 'git://github.com/khulnasoft-lab-cookbooks/rvm.git', branch: 'patches_0.9.0'
+
+metadata
+

@@ -1,0 +1,14 @@
+# THIS FILE IS MANAGED BY CHEF
+# Local modifications will be discarded.
+
+description "GitHub Connector"
+
+start on runlevel [2]
+stop on runlevel [016]
+
+setuid <%= node['github_manager']['user'] %>
+chdir <%= node['github_manager']['install_dir'] %>
+exec <%= @rvm_path %>/bin/rvm <%= node['github_manager']['rvm_alias'] %> do puma -e production -b unix://<%= node['github_manager']['install_dir'] %>/tmp/sockets/puma.sock
+reload signal SIGUSR2
+
+respawn
