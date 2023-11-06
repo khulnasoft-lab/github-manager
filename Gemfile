@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2.11.1'
+gem 'rails', '~> 7.1.1'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
